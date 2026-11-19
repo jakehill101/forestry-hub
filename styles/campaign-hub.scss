@@ -228,6 +228,8 @@ main:has(.ch-home) > header h1 { display: none; }
 }
 
 .ch-job {
+  /* A grid item won't shrink below its content's width without this. */
+  min-width: 0;
   background: #f0e2c0;
   color: #2b2217;
   /* The notice is always parchment, so it needs its own edge: on a light
@@ -282,11 +284,15 @@ main:has(.ch-home) > header h1 { display: none; }
 .ch-job-done h3,
 .ch-job-failed h3 { text-decoration: line-through; }
 
+/* A tag holds whatever Jake typed, and a reward can run to a sentence. It
+   wraps inside its notice instead of running out of it: still a pill on one
+   line, a rounded box on two. */
 .ch-tag {
-  border-radius: 999px;
+  border-radius: 0.8em;
   padding: 1px 8px;
   border: 1px solid rgba(43, 34, 23, 0.35);
-  white-space: nowrap;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .ch-tag-open { background: #d9ead0; border-color: #8fb37a; }

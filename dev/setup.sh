@@ -58,6 +58,16 @@ echo "==> copying fixture notes"
 # notes.json in place — the build needs both.
 find "$GARDEN/src/site/notes" -name '*.md' -delete
 find "$GARDEN/src/site/notes" -mindepth 1 -type d -empty -delete
-cp -R "$REPO_ROOT/dev/fixtures/notes/." "$GARDEN/src/site/notes/"
+# The fixtures live in one JSON file, not a folder of notes: the garden's
+# plugin installer fetches every file in the repo with its own unauthenticated
+# GitHub request, and GitHub allows only 60 of those an hour.
+node -e '
+const fs = require("fs"), path = require("path");
+const [source, dest] = process.argv.slice(1);
+for (const [rel, note] of Object.entries(JSON.parse(fs.readFileSync(source, "utf8")))) {
+  const file = path.join(dest, rel);
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, "---\n" + JSON.stringify(note.frontmatter) + "\n---\n" + note.body);
+}' "$REPO_ROOT/dev/fixtures/notes.json" "$GARDEN/src/site/notes"
 
 echo "==> ready. dev/build.sh to build, dev/shot.mjs to screenshot."

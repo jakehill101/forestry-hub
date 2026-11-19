@@ -197,14 +197,20 @@ dev/setup.sh --hexmap the same, plus the hexcrawl-map plugin, to test the map ca
 dev/build.sh          build, and fail on any [plugins] warning
 dev/build.sh --off    build with the plugin disabled, to prove the site is unchanged
 node dev/shot.mjs     screenshot every page at 1280 px and 400 px
-node --test dev/tests/data.test.js
+node --test dev/tests/*.js
 ```
 
-`dev/fixtures/notes/` holds a fake campaign in the shape the Obsidian
+`dev/fixtures/notes.json` holds a fake campaign in the shape the Obsidian
 publisher actually writes — JSON frontmatter with user properties nested under
 `dg-note-properties` — including the awkward cases: missing properties, a hex
 list typed as a string, a session with no date, an unpublished wikilink target
-and a hidden note.
+and a hidden note. Each entry is a note path with its `frontmatter` and `body`;
+`dev/setup.sh` writes them out as notes in the test garden.
+
+It is one file rather than a folder of notes on purpose. Installing or
+updating a garden plugin fetches every file in its repository with a separate
+unauthenticated GitHub request, and GitHub allows 60 of those an hour, so each
+file added to this repository makes installs more likely to fail.
 
 The plugin is copied rather than symlinked into the test garden on purpose:
 the loader lists `src/plugins` with `withFileTypes` and keeps only entries

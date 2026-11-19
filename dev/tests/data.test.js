@@ -2,7 +2,7 @@
  * Data layer tests. Run with `node --test dev/tests/*.js` — node's own runner, so
  * the plugin still ships no npm dependencies.
  *
- * The fixtures under dev/fixtures/notes are read the way Eleventy would build
+ * The fixtures in dev/fixtures/notes.json are read the way Eleventy would build
  * collections.note from them, so these tests cover the real published
  * frontmatter shape, including the edge cases.
  */
@@ -13,34 +13,22 @@ const path = require("node:path");
 
 const data = require("../../lib/data");
 
-const NOTES = path.join(__dirname, "..", "fixtures", "notes");
+const NOTES = path.join(__dirname, "..", "fixtures", "notes.json");
 
-/** Rebuild collections.note from the fixture files. */
+/** Rebuild collections.note from the fixtures, as Eleventy would. */
 function loadCollection() {
-  const items = [];
-  const walk = (dir) => {
-    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-      const full = path.join(dir, entry.name);
-      if (entry.isDirectory()) {
-        walk(full);
-        continue;
-      }
-      if (!entry.name.endsWith(".md")) continue;
-      const raw = fs.readFileSync(full, "utf8");
-      const match = raw.match(/^---\n([\s\S]*?)\n---/);
-      const front = match ? JSON.parse(match[1]) : {};
-      const stem = full.slice(NOTES.length).replace(/\.md$/, "");
-      const isHome = Array.isArray(front.tags) && front.tags.includes("gardenEntry");
-      items.push({
-        url: isHome ? "/" : front.permalink,
-        fileSlug: path.basename(stem),
-        filePathStem: `/notes${stem}`,
-        data: front,
-      });
-    }
-  };
-  walk(NOTES);
-  return items;
+  const notes = JSON.parse(fs.readFileSync(NOTES, "utf8"));
+  return Object.entries(notes).map(([rel, note]) => {
+    const front = note.frontmatter || {};
+    const stem = "/" + rel.replace(/\.md$/, "");
+    const isHome = Array.isArray(front.tags) && front.tags.includes("gardenEntry");
+    return {
+      url: isHome ? "/" : front.permalink,
+      fileSlug: path.basename(stem),
+      filePathStem: `/notes${stem}`,
+      data: front,
+    };
+  });
 }
 
 const collection = loadCollection();

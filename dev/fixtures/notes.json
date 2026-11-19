@@ -1,0 +1,512 @@
+{
+  "Adventurers.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/adventurers/",
+      "dg-note-properties": {
+        "hub": "roster"
+      }
+    },
+    "body": "Everyone who has walked out of the gate.\n"
+  },
+  "Adventurers/Brak.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/adventurers/brak/",
+      "dg-note-properties": {
+        "type": "character",
+        "player": "Ada",
+        "class": "Fighter",
+        "level": 3,
+        "status": "alive",
+        "location": "[[Places/Ledge Camp]]"
+      }
+    },
+    "body": "Came up the road with the refugees and stayed at the gate.\n"
+  },
+  "Adventurers/Fen.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/adventurers/fen/",
+      "dg-note-properties": {
+        "type": "character",
+        "player": "Lou",
+        "status": "missing",
+        "fate": "did not come back down the canyon",
+        "location": "200"
+      }
+    },
+    "body": "Went ahead to scout the treeline and was not there when the party turned round.\n"
+  },
+  "Adventurers/Mira.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/adventurers/mira/",
+      "dg-note-properties": {
+        "type": "character",
+        "player": "Kit",
+        "class": "Wizard",
+        "level": 2,
+        "status": "retired",
+        "fate": "keeps the ledger at Fellgard now",
+        "location": "Fellgard"
+      }
+    },
+    "body": "Decided the valley was better served by someone who could read.\n"
+  },
+  "Adventurers/Oren.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/adventurers/oren/",
+      "dg-note-properties": {
+        "type": "character",
+        "player": "Priya",
+        "class": "Cleric",
+        "level": 2,
+        "status": "dead",
+        "fate": "fell at the cave mouth"
+      }
+    },
+    "body": "Went in first, every time, until the last time.\n"
+  },
+  "Adventurers/Tam.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/adventurers/tam/",
+      "dg-note-properties": {
+        "type": "character",
+        "player": "Joss",
+        "class": "Rogue",
+        "level": 2,
+        "origin": "Orlyn",
+        "status": "alive",
+        "location": 59
+      }
+    },
+    "body": "Left Orlyn in a hurry and does not talk about it.\n"
+  },
+  "Adventurers/Ysolde.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/adventurers/ysolde/",
+      "dg-note-properties": {
+        "type": "character",
+        "player": "Sam",
+        "class": "Ranger",
+        "level": 3,
+        "origin": "[[Holtwyn]]",
+        "status": "alive",
+        "location": [
+          [
+            "Ledge Camp"
+          ]
+        ]
+      }
+    },
+    "body": "Grew up walking the north fence. Knows which farmsteads are still standing.\n"
+  },
+  "Expedition log.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/expedition-log/",
+      "dg-note-properties": {
+        "hub": "log"
+      }
+    },
+    "body": "Every expedition that has come back, and what it found.\n"
+  },
+  "Expeditions/Session zero at Fellgard.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/expeditions/session-zero-at-fellgard/",
+      "dg-note-properties": {
+        "type": "session",
+        "date": "2026-08-27",
+        "party": [
+          "Ysolde",
+          "Brak",
+          "Tam",
+          "Oren",
+          "Mira"
+        ],
+        "hexes": [
+          68,
+          78
+        ],
+        "summary": "Arrived with the refugees, met Hedda, Brenna, Oslac and Bram."
+      }
+    },
+    "body": "Everyone starts at the gate with nothing.\n"
+  },
+  "Expeditions/The bridges below the Wyrm.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/expeditions/the-bridges-below-the-wyrm/",
+      "dg-note-properties": {
+        "type": "session",
+        "date": "2026-09-10",
+        "party": [
+          "Ysolde",
+          "Brak",
+          "Tam"
+        ],
+        "hexes": [
+          79,
+          89,
+          101
+        ],
+        "summary": "Drove off a goblin scouting party, found the south bridge cut."
+      }
+    },
+    "body": "The south bridge was cut from the far side, recently, with axes.\n"
+  },
+  "Expeditions/The long walk back.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/expeditions/the-long-walk-back/",
+      "dg-note-properties": {
+        "type": "session",
+        "party": [
+          "Brak"
+        ],
+        "hexes": [
+          70
+        ],
+        "summary": "Brak walked home alone. He will not say from where."
+      }
+    },
+    "body": "Written up out of order, with no date on it.\n"
+  },
+  "Expeditions/Up the canyon path.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/expeditions/up-the-canyon-path/",
+      "dg-note-properties": {
+        "type": "session",
+        "date": "2026-09-03",
+        "party": [
+          "[[Adventurers/Ysolde|Ysolde]]",
+          "[[Adventurers/Oren]]",
+          "Mira",
+          "Fen"
+        ],
+        "hexes": "57, 48",
+        "summary": "Escorted Oslac to the shrine, saw lights in the cave mouth."
+      }
+    },
+    "body": "Oren went closer than the rest of us would have liked.\n"
+  },
+  "Fellgard Holds.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/fellgard-holds/",
+      "tags": [
+        "gardenEntry"
+      ],
+      "dg-note-properties": {
+        "hub": "home",
+        "world-date": "Week 3 after the seal broke · Early summer · The passes are open",
+        "next-session": "2099-09-17 19:00",
+        "seats": 6,
+        "signed-up": 4,
+        "headlines": [
+          "**The ward broke.** The cave at the foot of Wardpeak stands open. Nobody who has properly gone in has properly come back.",
+          "**The king is dead** and Orlyn is half-burned and lawless. A warlord holds the road south.",
+          "**Goblin raids** are pushing down on the northern farmsteads, better supplied than goblins should be.",
+          "**Fellgard is safe,** for now. Overcrowded, undermanned, and the granary is thin."
+        ],
+        "rumours": [
+          "The seal was never real. Something just finally woke up.",
+          "The fen-folk killed the king. Everyone in Orlyn says so.",
+          "Those goblins had new steel. Goblins don't forge steel.",
+          "The Vigil failed in its duty and now we all pay for it.",
+          "There is a second way into the mountain, if you can find the shepherd who used it."
+        ]
+      }
+    },
+    "body": "Sign up on Discord by the Wednesday.\n"
+  },
+  "Fellgard/Granary.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/fellgard/granary/",
+      "dg-note-properties": {
+        "type": "facility",
+        "progress": 30,
+        "state": "thin · about 5 weeks of broth",
+        "warn": true
+      }
+    },
+    "body": "Part of the Fellgard rebuild.\n"
+  },
+  "Fellgard/Infirmary.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/fellgard/infirmary/",
+      "dg-note-properties": {
+        "type": "facility",
+        "progress": 5,
+        "state": "not started",
+        "warn": false
+      }
+    },
+    "body": "Part of the Fellgard rebuild.\n"
+  },
+  "Fellgard/Palisade.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/fellgard/palisade/",
+      "dg-note-properties": {
+        "type": "facility",
+        "progress": "half done",
+        "state": "the east run is still hurdles"
+      }
+    },
+    "body": "Part of the Fellgard rebuild.\n"
+  },
+  "Fellgard/Smithy.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/fellgard/smithy/",
+      "dg-note-properties": {
+        "type": "facility",
+        "progress": 60,
+        "state": "timber in, needs slate and a smith",
+        "warn": false
+      }
+    },
+    "body": "Part of the Fellgard rebuild.\n"
+  },
+  "Fellgard/The watch.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/fellgard/the-watch/",
+      "dg-note-properties": {
+        "type": "facility",
+        "progress": 25,
+        "state": "2 recruits from the refugee camp",
+        "warn": false
+      }
+    },
+    "body": "Part of the Fellgard rebuild.\n"
+  },
+  "Job board.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/job-board/",
+      "dg-note-properties": {
+        "hub": "jobs"
+      }
+    },
+    "body": "Everything pinned at the Wyrm's Head, and everything taken off it.\n"
+  },
+  "Jobs/A roof for the smithy.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/jobs/a-roof-for-the-smithy/",
+      "dg-note-properties": {
+        "type": "job",
+        "status": "open",
+        "patron": "[[People/Brenna Crowfoot]]",
+        "reward": "a debt from the smith",
+        "hex": 123,
+        "posted": "2026-09-02",
+        "summary": "Brenna will pay for sound timber and slate hauled up from Hartholt."
+      }
+    },
+    "body": "Six cartloads. The carts are the easy part.\n"
+  },
+  "Jobs/Burnt farmsteads north of Carlinholt.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/jobs/burnt-farmsteads-north-of-carlinholt/",
+      "dg-note-properties": {
+        "type": "job",
+        "status": "open",
+        "patron": "[[People/Hedda Stane]]",
+        "reward": "50 gp",
+        "hex": 59,
+        "posted": "2026-09-08",
+        "summary": "Hedda wants to know where the raiders are camped, and who is arming them."
+      }
+    },
+    "body": "Three farmsteads in a fortnight, all of them burnt after the harvest was taken.\n"
+  },
+  "Jobs/Escort the tithe wagon.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/jobs/escort-the-tithe-wagon/",
+      "dg-note-properties": {
+        "type": "job",
+        "status": "taken",
+        "patron": "[[People/Brenna Crowfoot|Brenna]]",
+        "reward": "30 gp, and Brenna pays fair for anything else you bring back from the road",
+        "hex": [
+          12,
+          13
+        ],
+        "taken-by": "Sun party",
+        "posted": "2026-09-09",
+        "summary": "Two days down the valley road with a wagon nobody should be able to lift."
+      }
+    },
+    "body": "The road is watched. Brenna would rather pay than lose the iron.\n"
+  },
+  "Jobs/Rites at the old shrine.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/jobs/rites-at-the-old-shrine/",
+      "dg-note-properties": {
+        "type": "job",
+        "status": "done",
+        "patron": "[[Oslac]]",
+        "hex": 48,
+        "posted": "2026-08-30",
+        "summary": "Oslac needs an escort to carry the lamps to a wayside shrine on the canyon path."
+      }
+    },
+    "body": "Done, and the lamps are still lit.\n"
+  },
+  "Jobs/Salt for the winter.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/jobs/salt-for-the-winter/",
+      "dg-note-properties": {
+        "type": "job",
+        "status": "open"
+      }
+    },
+    "body": "Someone will need to go to the coast before the passes close.\n"
+  },
+  "Jobs/Scout the Wyrm's Mouth.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/jobs/scout-the-wyrms-mouth/",
+      "dg-note-properties": {
+        "type": "job",
+        "status": "taken",
+        "patron": "[[People/Hedda Stane]]",
+        "hex": 39,
+        "taken-by": "Thu party",
+        "posted": "2026-09-06",
+        "summary": "Map the first chamber past the broken seal and come back alive."
+      }
+    },
+    "body": "Report to the war-room. Do not go past the second turning.\n"
+  },
+  "Jobs/The drowned mill.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/jobs/the-drowned-mill/",
+      "dg-note-properties": {
+        "type": "job",
+        "status": "failed",
+        "patron": "Bram",
+        "reward": "25 gp",
+        "hex": "88, 89",
+        "posted": "2026-08-20",
+        "summary": "Find out what stopped the wheel. Nobody came back with an answer."
+      }
+    },
+    "body": "The mill pond is deeper than it has any right to be.\n"
+  },
+  "Jobs/The reeve's private worry.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/jobs/the-reeves-private-worry/",
+      "hide": true,
+      "dg-note-properties": {
+        "type": "job",
+        "status": "open",
+        "patron": "[[People/Hedda Stane]]",
+        "summary": "This note is hidden and must not reach the job board."
+      }
+    },
+    "body": "Hidden notes stay out of the hub.\n"
+  },
+  "Lore/Current situation.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/lore/current-situation/",
+      "dg-note-properties": {}
+    },
+    "body": "A plain lore note, here to check the plugin leaves ordinary pages alone.\n\n> [!quote] Overheard at the Wyrm's Head\n> \"Goblins don't forge steel.\"\n"
+  },
+  "Lore/Map index.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/lore/map-index/",
+      "dg-note-properties": {
+        "type": 3,
+        "hub": true,
+        "hexmap": "yes please"
+      }
+    },
+    "body": "A note with a numeric type and a boolean hub. Not part of the hub.\n"
+  },
+  "Map of Dunvale.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/map-of-dunvale/",
+      "dg-note-properties": {
+        "hexmap": true
+      }
+    },
+    "body": "Click a hex you have been to.\n"
+  },
+  "People/Brenna Crowfoot.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/people/brenna-crowfoot/",
+      "title": "Brenna Crowfoot",
+      "dg-note-properties": {
+        "title": "Brenna Crowfoot"
+      }
+    },
+    "body": "Smith without a smithy since the fire.\n"
+  },
+  "People/Hedda Stane.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/people/hedda-stane/",
+      "title": "Hedda Stane",
+      "dg-note-properties": {
+        "title": "Hedda Stane"
+      }
+    },
+    "body": "Reeve of Fellgard. Keeps the gate shut and the ledger open.\n"
+  },
+  "People/Wenna the fence.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/people/wenna-the-fence/",
+      "dg-note-properties": {
+        "type": [
+          "npc",
+          "merchant"
+        ]
+      }
+    },
+    "body": "Buys anything that fell off a cart. Not part of the hub.\n"
+  },
+  "Places/Ledge Camp.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/places/ledge-camp/",
+      "dg-note-properties": {
+        "hex": 57
+      }
+    },
+    "body": "A shelf of flat rock above the canyon path, with a fire ring and room for six.\n"
+  },
+  "Rebuilding Fellgard.md": {
+    "frontmatter": {
+      "dg-publish": true,
+      "permalink": "/rebuilding-fellgard/",
+      "dg-note-properties": {
+        "hub": "fort"
+      }
+    },
+    "body": "What the table has paid for, and what still needs paying for.\n"
+  }
+}
